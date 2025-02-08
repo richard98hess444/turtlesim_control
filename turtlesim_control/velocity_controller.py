@@ -19,7 +19,8 @@ class VelocityController(Node):
         self.goal_y = 0
         self.goal_t = 0
         
-        # TODO: add other variables or functions
+        # TODO: add other variables
+        # TODO: add a timer, somthing like: self.timer = self.create_timer(0.1, self.velocity_publisher)
         
         self.init_pubs_and_subs()
 
