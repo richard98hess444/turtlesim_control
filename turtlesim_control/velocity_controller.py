@@ -9,9 +9,17 @@ class VelocityController(Node):
     def __init__(self):
         super().__init__('velocity_controller')
         
+        # Current pose
         self.curr_x = 0
         self.curr_y = 0
         self.curr_t = 0
+        
+        # Goal pose
+        self.goal_x = 0
+        self.goal_y = 0
+        self.goal_t = 0
+        
+        # TODO: add other variables or functions
         
         self.init_pubs_and_subs()
 
@@ -22,6 +30,9 @@ class VelocityController(Node):
             self.pose_callback,
             1)
         self.sub_pose
+        
+        # TODO: goal pose subscriber
+        # TODO: velocity publisher
         
     def pose_callback(self, pose: Pose) -> None:
         self.curr_x = pose.x
