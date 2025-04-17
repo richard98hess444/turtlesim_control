@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'velocity_controller = turtlesim_control.velocity_controller:main'
+            'waypoint_tracker = turtlesim_control.waypoint_tracker:main'
         ],
     },
 )
